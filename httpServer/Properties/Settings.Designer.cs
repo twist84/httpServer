@@ -23,6 +23,15 @@ namespace httpServer.Properties {
             }
         }
         
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("default.html,default.htm,index.html,index.htm")]
+        public string DefaultFileList {
+            get {
+                return ((string)(this["DefaultFileList"]));
+            }
+        }
+        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("http")]
@@ -92,15 +101,6 @@ namespace httpServer.Properties {
             }
             set {
                 this["EnableDirectoryBrowsing"] = value;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("default.html,default.htm,index.html,index.htm")]
-        public string DefaultFileList {
-            get {
-                return ((string)(this["DefaultFileList"]));
             }
         }
     }
